@@ -1,0 +1,384 @@
+/* Prevent horizontal scroll */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Titillium Web';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Image of the planet */
+.planet-img {
+    position: relative;
+    left: auto;
+    right: auto;
+    -webkit-animation:bounce 1s infinite;
+}
+
+/* Bounce animation */
+@-webkit-keyframes bounce {
+    0%       { bottom:0.50px; }
+    10%      { bottom:1.00px; }
+    20%      { bottom:1.50px; }
+    30%      { bottom:2.00px; }
+    40%      { bottom:2.50px; }
+    50%      { bottom:3.00px; }
+    60%      { bottom:2.50px; }
+    70%      { bottom:2.00px; }
+    80%      { bottom:1.50px; }
+    90%      { bottom:1.00px; }
+    100%     {bottom:0.50px;}
+}
+
+@keyframes bounce {
+    0%       { bottom:0.50px; }
+    10%      { bottom:1.00px; }
+    20%      { bottom:1.50px; }
+    30%      { bottom:2.00px; }
+    40%      { bottom:2.50px; }
+    50%      { bottom:3.00px; }
+    60%      { bottom:2.50px; }
+    70%      { bottom:2.00px; }
+    80%      { bottom:1.50px; }
+    90%      { bottom:1.00px; }
+    100%     {bottom:0.50px;}
+}
+
+#PaySuccess{
+    padding: 20% 0;
+}
+#loginPage{
+    padding: 5% 0 10%;
+}
+
+/* Buttons */
+.login-btn {
+  margin-left: .25em;
+  padding: .5em;
+}
+
+#login-fail-txt {
+    color: red;
+}
+
+.register-btn {
+  padding: .5em;
+}
+
+.nonbutton-item{
+    /* margin: 0 0.5%; */
+}
+
+/* Navbar */
+.navbar {
+    margin: 0 4.5%;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Source Serif Pro';
+  font-weight: bolder;
+  font-size: 4rem;
+  line-height: 1.5;
+  margin: 7rem auto 0 ;
+  width: 75%;
+}
+
+.about-heading {
+  font-family: 'Source Serif Pro';
+  font-size: 3rem;
+  line-height: 1.5;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.pricing-heading {
+  font-family: 'Source Serif Pro';
+  font-size: 3rem;
+  line-height: 1.5;
+  padding-top: 0.5em;
+}
+
+.price-h, .price-text{
+  color: #000;
+}
+
+.aboutus-p {
+  margin: 5% 2rem;
+}
+
+.prices {
+  margin: auto;
+  padding-top: 3em;
+}
+
+/* Sections */
+.colored-section {
+  /* #502980 */
+  /* #2309bf */
+  background-image: linear-gradient(#3b1f5d,#050299);
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 0;
+}
+
+.pricing-section {
+  padding-bottom: 10em;
+}
+
+.white-section {
+  background-color: #fff;
+  padding-bottom: 0;
+}
+
+.grey-section {
+    background-color: none;
+  /* background-color: #191A32; */
+}
+
+.front-layer {
+  position: relative;
+  z-index: 2;
+}
+
+#footer {
+  padding-bottom: 1%;
+  background-color: #191A32;
+}
+
+/* Buy Now Section */
+
+.payment-section {
+  margin: 10% auto;
+}
+
+.sections-cards {
+  width: 75%;
+  margin: 0 auto 0.3em;
+}
+
+/* Style the form */
+
+/* Make circles that indicate the steps of the form: */
+.stepActive .stepInactive {
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: #bbbbbb;
+ border: none;
+ border-radius: 50%;
+ display: inline-block;
+ opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+ opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+ background-color: #4CAF50;
+}
+
+/* Image */
+.title-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 0.25em;
+  right: 1.25em;
+  color: #8f8f8f;
+}
+
+.image-blur {
+  position: absolute;
+  bottom: .25em;
+  right: 0.25em;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+  width: 20em;
+  height: 1.5em;
+}
+
+/* Login Page */
+.email-pass-login {
+  margin-bottom: 3em;
+}
+
+.email-pass-txt{
+  color: #000;
+}
+
+.email-pass-bar {
+    width: 40%;
+    margin: 0 auto 2%;
+}
+
+.or-txt {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #fff;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+.or-txt span {
+    /* background: #0F104F; */
+    background: #1A1283;
+    padding:0 10px;
+}
+
+/* Register Section */
+
+.login-header{
+    position: relative;
+    padding: 5% 0 3% 0;
+    color: #fff;
+}
+
+.register-header {
+    position: relative;
+    padding: 5% 0 3% 0;
+    color: #000;
+}
+
+.register-section {
+    background-color: #fff;
+    margin: 10% auto 10%;
+    width: 60%;
+    border-radius: 1.5%;
+}
+
+.register-boxes {
+    width: 75%;
+    margin-bottom: 3%;
+}
+
+#register-buy{
+    margin: 0 auto 8%;
+}
+
+.email-pass-card {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.google-facebook-reg-log {
+  margin: 3% auto 10%;
+  width: 75%;
+}
+
+.social-card{
+    text-align: center;
+}
+
+.invalid { color: red; }
+.valid { color: green; }
+.initiallyHidden { display: none; }
+
+.input-requirements{
+    color: #99A3A4;
+}
+
+input:not([type="submit"]) + .input-requirements {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
+input:not([type="submit"]):hover + .input-requirements,
+input:not([type="submit"]):focus + .input-requirements,
+input:not([type="submit"]):active + .input-requirements {
+  max-height: 1000px; /* any large number (bigger then the .input-requirements list) */
+  transition: max-height 1s ease-in;
+}
+
+#video-page{
+    /* padding: 10em; */
+    padding: 8em 0 10em;
+}
+
+.next-btn{
+    position: absolute;
+    right: 22%;
+    /* margin: auto 85% 15% auto; */
+}
+
+.prev-btn{
+    position: absolute;
+    left: 22.5%;
+    /* margin: auto 15% 85% auto; */
+}
+
+/* Pay Success Page */
+.pay-success-container {
+  background-color: #00C851;
+  color: #007E33;
+  border-radius: 0.2em;
+  margin-top: 2em;
+  width: 75%;
+}
+
+/* Sections Page */
+#sections {
+    padding: 10% 0 20%;
+}
+
+.list-group-item{
+    color: #000;
+}
+
+.section-ans{
+    color: #32b855;
+}
+
+.section-sci{
+    color: #3436c7;
+}
+
+button.collapsed{
+    width: 20%;
+}
+
+.pay-success-btn {
+  margin-top: .5em;
+  width: 25%;
+}
+
+@media (max-width: 993px) {
+  .login-btn {
+    margin: 0.3em 0 0 0;
+    width: 100%;
+  }
+
+  .phys-name{
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+    .big-heading{
+        font-family: 'Source Serif Pro';
+        font-weight: bolder;
+        font-size: 2.5rem;
+        line-height: 1.5;
+        margin: 7rem auto 0 ;
+        width: 75%;
+    }
+}

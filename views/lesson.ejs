@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+<section id="video-page">
+
+<h1><%= sectionNumber %></h1>
+<h1><%= sectionName %></h1>
+
+<div class="row">
+    <div class="col-sm-12">
+        <iframe src="<%= vidUrl %>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+</div>
+
+<form action="/lesson" method="POST">
+<div class="row">
+<% if(Number(prevI) >= 0) {   %>
+    <div class="col-sm-1 prev-btn">
+         <button class="btn btn-dark" type="submit" name="course" value="<%= prevI %>">
+            Previous
+         </button>
+    </div>
+    <% } if(Number(nextI) < 84){ %>
+    <div class="col-sm-1 next-btn">
+         <button class="btn btn-dark" type="submit" name="course" value="<%= nextI %>">
+            Next
+         </button>
+    </div>
+    <% } %>
+
+</div>
+</form>
+
+
+</section>
+</section>
+<%- include('partials/footer') %>

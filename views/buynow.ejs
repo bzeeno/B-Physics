@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+  <section class="white-section payment-section">
+
+    <h2 class="section-heading">Start Learning Today!</h2>
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6 col-sm-6 prices">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="price-h">Physics & Astronomy</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$50</h2>
+            <p>Learn Python for Scientific Computing</p>
+            <p>Get Hands-On Research Experience</p>
+
+            <form action="/charge" method="post">
+              <script class="stripe-button" src="https://checkout.stripe.com/checkout.js" data-key="pk_test_NvJVP1BAbTCijcAKrKv5GRRq00e8JZ7UGi" data-amount="5000" data-name="research class" data-description="Learn to do research in physics and astronomy"
+                data-locale="auto" data-currency="usd">
+
+              </script>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+<%- include('partials/footer') %>

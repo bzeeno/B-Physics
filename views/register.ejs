@@ -1,0 +1,86 @@
+<%- include('partials/header') %>
+
+
+<section class="pricing-section">
+    <div class="container register-section">
+
+        <h1 class="register-header">Create An Account</h1>
+        <div class="row">
+
+            <!-- <div class="col-sm-12 email-pass-login"> -->
+
+            <!-- Makes POST request to /register route -->
+
+            <form action="/register" method="post">
+
+                <label class="email-pass-txt register-boxes" for="email">
+                    <span>Email</span>
+                    <input type="email" class="form-control" name="username" required>
+                </label>
+
+
+
+
+                <label class="email-pass-txt register-boxes" for="cUsername">
+                    <span>Confirm Email</span>
+                    <input type="email" class="form-control" name="cUsername" required>
+                    <ul id="email-list" class="input-requirements">
+                        <li>Needs to Match The First One</li>
+                    </ul>
+                </label>
+
+
+
+
+                <label class="email-pass-txt register-boxes" for="password">
+                    <span>Password</span>
+                    <input id="password" type="password" class="form-control" name="password" minlength="8" maxlength="100" required>
+                    <ul id="pass-list" class="input-requirements">
+                        <li>At least 8 characters long (and less than 100 characters)</li>
+                    </ul>
+                </label>
+
+
+
+
+                <label class="email-pass-txt register-boxes" for="cPassword">
+                    <span>Confirm Password</span>
+                    <input id="confirm-password" type="password" class="form-control" name="cPassword" minlength="8" maxlength="100" required>
+                    <ul id="cPass-list" class="input-requirements">
+                        <li>Needs to Match The First One</li>
+                    </ul>
+                </label>
+
+                <div class="row">
+                    <div class="pricing-column col-sm-9" id="register-buy">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="price-h">Physics & Astronomy</h3>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="price-text">$1</h2>
+                                <p>Learn Python for Scientific Computing</p>
+                                <p>Get Hands-On Research Experience</p>
+                                <script class="stripe-button" src="https://checkout.stripe.com/checkout.js" data-key="pk_test_51JLCuMLWorI6KCkRrQIQPVsciP5HdYvNE3WYmHKBNqV3QjHqFmTS7honEr04XU0XuuzPNXn6SJ12SdnPBBe9r5Gj00myAFHrtw" data-amount="100" data-name="research class" data-description="Learn to do research in physics and astronomy"
+                                    data-locale="auto" data-currency="usd">
+
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+<script src="js/register.js" charset="utf-8"></script>
+
+<%- include('partials/footer') %>

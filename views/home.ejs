@@ -1,0 +1,67 @@
+<%- include('partials/header') %>
+
+<!-- Title -->
+<!-- <section class="colored-section"> -->
+  <div class="row front-layer">
+    <div class="col-lg-12">
+      <h1 class="big-heading">Gain Research Experience in Astrophysics!</h1>
+      <img class="planet-img bounce" src="images/planet.png" alt="">
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- About Us -->
+
+<section class="white-section" id="about">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+        <h3 class="about-heading">About us</h3>
+      <p class="aboutus-p">
+        We learn new things about the Universe everyday, but not many people actually
+        know how this research is conducted. This course is designed
+        to show you the techniques that are used by researchers in the physics, astronomy, and
+        astrophysics communities. This course focuses on computational research and no prior
+        knowledge is required! It's perfect for you if you want to have research experience to
+        put on your college application, want a summer internship but don't have the time or money,
+         or if you're just curious about what scientists do to conduct research!
+      </p>
+    </div>
+    <div class="col-lg-6 col-md-6">
+      <img class="title-image" src="images/dome_sky.jpg" alt="Observatory">
+      <img class="image-blur" src="images/black.jpeg">
+      <div class="image-credit">Photo by Alex Franzelin on Unsplash</div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="colored-section pricing-section" id="pricing">
+  <h2 class="pricing-heading">Start Learning Today!</h2>
+<div class="row">
+
+  <div class="pricing-column col-lg-4 col-md-6 col-sm-6 prices">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="price-h">Physics & Astronomy</h3>
+      </div>
+      <div class="card-body">
+        <h2 class="price-text">$1</h2>
+        <p>Learn Python for Scientific Computing</p>
+        <p>Get Hands-On Research Experience</p>
+        <p>Great For College Applications</p>
+        <% if(loggedInStatus){ %>
+          <a class="nav-link btn btn-lg btn-block btn-outline-dark" href="/sections" role="button">Go To Sections</a>
+        <% } else { %>
+          <a class="nav-link btn btn-lg btn-block btn-outline-dark" href="/register" role="button">Buy Now</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<%- include('partials/footer') %>
